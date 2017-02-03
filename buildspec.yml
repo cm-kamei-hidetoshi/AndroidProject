@@ -7,7 +7,8 @@ phases:
       - sudo apt-get -y install wget
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo chmod gradlew +x
+      - chmod +x gradlew
   build:
     commands:
       - ./gradlew assemble
